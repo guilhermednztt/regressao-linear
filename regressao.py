@@ -4,7 +4,7 @@ EXERCICIO PARA CRIACAO DA RETA DE REGRESSA LINEAR.
 MATERIAL: USP [https://edisciplinas.usp.br/pluginfile.php/1479289/mod_resource/content/0/regr_lin.pdf], SLIDE 10
 """
 
-import dados_exercicio3 as dados
+import dados as dados
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -29,9 +29,6 @@ class RegressaoLinear:
         for i in self.dados[0]:
             valorVariavelDependente = self.calcularVariavelDependente(i)
             reta.append(valorVariavelDependente)
-
-            if i == 21:
-                print("\n\nA previsão para o valor de Y é: {}\n\n".format(valorVariavelDependente))
 
         reta = [self.dados[0], reta]
 
